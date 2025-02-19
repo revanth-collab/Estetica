@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Manrope:wght@200..800&family=Monsieur+La+Doulaise&family=Montez&display=swap');
+
+.faded-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    overflow: hidden;
+    margin-top: 0;
+    margin-bottom: 0;
+    top:0;
+    bottom: 0;
+}
+.faded-page-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.5)
+}
+.faded-page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+}
+.fadedpage-heading {
+    color: #c99c53;
+    font-size: 2rem;
+    font-family: "Grechen Fuemen", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 0;
+}
+/* .fadedpage-span{
+    color: #785e0c;
+    font-size: 2rem;
+    font-family: "Grechen Fuemen", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 0;
+} */
+.fadedpage-content {
+    color: #e9e4e4;
+    /* font-family: "Kode Mono", serif; */
+    font-family: "Manrope", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
