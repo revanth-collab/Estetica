@@ -1,6 +1,7 @@
 import NavBar from "../NavBar"
 import OurTeam from "../OurTeam"
 import Rotate3D from "../Rotate3D"
+import FooterPage from "../FooterPage"
 import "./index.css"
 
 const LandingPage =() => (
@@ -12,6 +13,7 @@ const LandingPage =() => (
         <div className="our-team-wrapper">
             <OurTeam />
         </div>
+        <FooterPage />
     </div>
 )
 
