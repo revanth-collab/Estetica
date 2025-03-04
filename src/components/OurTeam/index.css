@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Kode+Mono:wght@400..700&family=Manrope:wght@200..800&family=Monsieur+La+Doulaise&family=Montez&display=swap');
 .wrapper {
     width: 100%;
     height: 100vh;
@@ -7,12 +8,39 @@
     justify-content: center;
     gap: 30px;
 }
-
+@media screen and (max-width:576px) {
+    .wrapper {
+        gap: 10px;
+    }
+}
+.our-team-heading {
+    font-family: "Grechen Fuemen", cursive;
+    font-weight: bold;
+    font-style: normal;
+}
+@media screen and (max-width:576px) {
+    .our-team-heading {
+        font-size:16px;
+        text-align: center;
+    }
+}
 .container {
-    height: 350px;
+    height: 400px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: start;
+}
+
+@media screen and (max-width:576px) {
+    .container {
+        height: 200px;
+        width:100%;
+        gap: 5px;
+        object-fit: cover;
+        align-self: flex-start;
+        margin-left:9px;
+        overflow-x:auto;
+    }
 }
 
 .card {
@@ -29,11 +57,29 @@
     box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
 }
 
+@media screen and (max-width:576px) {
+    .card {
+        width: 50px;
+        min-width: 50px;
+        border-radius: 10px;
+        border: 1px solid black;
+        margin: 0 2px;
+        box-shadow: 0px 2px 8px -2px rgba(0,0,0,0.8);
+    }
+}
+
+
 .card > .row {
     color: white;
     display: flex;
     flex-wrap: nowrap;
 }
+/* @media screen and (max-width:576px) {
+    .card > .row {
+        margin-left: 5;
+    }
+    
+} */
 
 .card > .row > .icon {
     background: #000000;
@@ -45,6 +91,13 @@
     justify-content: center;
     align-items: center;
     margin: 10px;
+}
+@media screen and (max-width:576px) {
+    .card > .row > .icon {
+        margin: 10px 1.5px 0px 1.5px;
+        height: 28px;
+        width: 28px;
+    }
 }
 
 .card > .row > .description {
@@ -59,6 +112,14 @@
     transition-delay: .3s;
     transition: all .3s ease;
 }
+@media screen and (max-width:576px) {
+    .card > .row > .description {
+        width: 300px;
+        height: 50px;
+        margin-left: 10px;
+    }
+    
+}
 
 .description p {
     color: #fff;
@@ -69,12 +130,25 @@
     text-transform: uppercase;
 }
 
-input {
+/* input {
     display: none;
+} */
+
+input {
+    opacity: 0;  /* Instead of display: none */
+    position: absolute;
+    z-index: -1;
 }
 
 input:checked + label {
-    width: 600px;
+    width: 800px;
+}
+
+@media screen and (max-width:576px) {
+    input:checked + label {
+        width: 250px;
+    }
+    
 }
 
 input:checked + label .description {
@@ -85,6 +159,13 @@ input:checked + label .description {
 .card[for="c1"] {
     background-image: url('https://cdn.pixabay.com/photo/2020/05/14/12/37/barber-5194406_1280.jpg');
 }
+/* @media screen and (max-width:576px) {
+    .card[for="c1"] {
+        background-repeat: no-repeat;
+        height: 100%;
+        background-size: 100% 100%;
+    }
+} */
 .card[for="c2"] {
     background-image: url('https://img.freepik.com/free-photo/woman-getting-treatment-hairdresser-shop_23-2149230917.jpg?t=st=1739961334~exp=1739964934~hmac=7d3e09ae5a4ca8a390d0bcda8ce4c3692bcb0188277eef7ddaa910a60d92af3e&w=996');
 }

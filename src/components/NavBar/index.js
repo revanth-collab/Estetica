@@ -26,13 +26,18 @@ const NavBar = () => {
                     <img src="https://www.esteticanow.com/images/est/logo.png" alt="Website Logo" className="navbar-logo"/>
                 </a>
             </div>
-            <ul className="nav-links">
-                <li className="list"><a href="#home" className="anchor">Home</a></li>
-                <li className="list"><a href="#services" className="anchor">About us</a></li>
-                <li className="list"><a href="#about" className="anchor">Pricing</a></li>
-                <li className="list"><a href="#about" className="anchor">Reviews</a></li>
-                <li className="list"><a href="#contact" className="anchor">Contact</a></li>
-            </ul>
+            <div className="laptop-links">
+                <ul className="nav-links">
+                    <li className="list"><a href="#home" className="anchor">Home</a></li>
+                    <li className="list"><a href="#services" className="anchor">About us</a></li>
+                    <li className="list"><a href="#about" className="anchor">Pricing</a></li>
+                    <li className="list"><a href="#about" className="anchor">Reviews</a></li>
+                    <li className="list"><a href="#contact" className="anchor">Contact</a></li>
+                </ul>
+            </div>
+            <div className="mobile-links">
+                
+            </div>
         </div>
     );
 };
