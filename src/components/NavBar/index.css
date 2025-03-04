@@ -26,6 +26,7 @@
 @keyframes navbarColor {
     to {
         background-color: rgb(67, 65, 65);
+        /* background-color: #ffebcd; */
     }
 }
 

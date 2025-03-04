@@ -8,6 +8,7 @@ const NavBar = () => {
         const handleScroll = () => {
             if (window.scrollY > 100) { // Change 100 to the desired scroll threshold
                 setNavbarColor("rgb(67, 65, 65)"); // New color after scrolling
+                // setNavbarColor("#ffebcd")
             } else {
                 setNavbarColor("transparent"); // Default color
             }
