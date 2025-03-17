@@ -10,6 +10,7 @@
     align-items: center;
     gap: 20px;
     padding: 20px;
+    margin-bottom:20px;
     height: auto;
     opacity: 0;
     animation: fadeInUp 1s ease-out forwards;
@@ -92,7 +93,7 @@
     box-shadow: 0px 6px 15px rgba(129, 91, 15, 0.25); /* Initial soft shadow */
     color: #523907ce;
     opacity: 0; /* Hide initially */
-    transform: translateY(100px);
+    transform: translateY(20px);
     
     /* Animation only runs when in viewport */
     view-timeline-name: --card;
@@ -130,7 +131,7 @@
     box-shadow: 0px 20px 50px rgba(129, 91, 15, 0.7), /* Deep Outer Glow */
                 0px 8px 25px rgba(129, 91, 15, 0.5), /* Mid Soft Glow */
                 inset 0px 3px 10px rgba(255, 255, 255, 0.3); /* Inner Light */
-    transform: translateY(-15px) scale(1.05) rotateX(8deg);
+    transform: translateY(-5px) scale(1.05) rotateX(8deg);
     border: 1.5px solid rgba(255, 255, 255, 0.6);
 }
 @media screen and (max-width: 576px) {
@@ -160,7 +161,7 @@
 }
 
 /* Define animation */
-@keyframes fadeInUp {
+/* @keyframes fadeInUp {
     from {
         opacity: 0;
         transform: translateY(50px);
@@ -169,7 +170,7 @@
         opacity: 1;
         transform: translateY(0);
     }
-}
+} */
 
 /* Apply animation to heading and paragraph */
 .contact-us-main-heading,
