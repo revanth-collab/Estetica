@@ -39,7 +39,7 @@
     position: sticky;
     top:48px;
     background-color: #ffebcd ;
-    border-radius: 50px;
+    border-radius: 40px;
     margin:20px;
 }
 @media screen and (max-width:576px) {
@@ -51,6 +51,7 @@
         padding:30px 20px;
         height: 180vh;
         position: relative;
+        border-radius: 10px;
     }
     .size-lr{
         height:140vh;

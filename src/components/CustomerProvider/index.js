@@ -4,16 +4,16 @@ import "./index.css";
 
 const CustomerProvider = () => {
     useEffect(() => {
-        ScrollReveal().reveal(".customerprovider-heading",{
-            duration:1200,
-            distance:"50px",
-            delay:30,
-            easing:"ease-in-out",
-            reset:true,
-            once:false,
-            viewFactor: 0.3 
-        })
-        ScrollReveal().reveal(".customerprovider-para, .customer-provider-card",{
+        // ScrollReveal().reveal(".customerprovider-heading",{
+        //     duration:1200,
+        //     distance:"50px",
+        //     delay:30,
+        //     easing:"ease-in-out",
+        //     reset:true,
+        //     once:false,
+        //     viewFactor: 0.3 
+        // })
+        ScrollReveal().reveal(".customer-provider-card",{
             duration:1200,
             distance:"50px",
             delay:35,
@@ -31,23 +31,23 @@ const CustomerProvider = () => {
             once:false,
             viewFactor: 0.3 
         })
-        // const observer = new IntersectionObserver(
-        //     (entries) => {
-        //         entries.forEach((entry) => {
-        //             if (entry.isIntersecting) {
-        //                 entry.target.classList.add("in-view");
-        //             } else {
-        //                 entry.target.classList.remove("in-view");
-        //             }
-        //         });
-        //     },
-        //     { threshold: 0.5 }
-        // );
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("in-view");
+                    } else {
+                        entry.target.classList.remove("in-view");
+                    }
+                });
+            },
+            { threshold: 0.5 }
+        );
 
-        // const elements = document.querySelectorAll(".fade-in");
-        // elements.forEach((el) => observer.observe(el));
+        const elements = document.querySelectorAll(".fade-in");
+        elements.forEach((el) => observer.observe(el));
 
-        // return () => elements.forEach((el) => observer.unobserve(el));
+        return () => elements.forEach((el) => observer.unobserve(el));
     }, []);
 
     return (
