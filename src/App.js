@@ -7,6 +7,7 @@ import LandingPage from "./components/LandingPage";
 import Contact from "./components/Contact";
 import ReviewsComponent from "./components/ReviewsComponent";
 import Pricing from "./components/Pricing";
+import AboutUs from "./components/AboutUs";
 import "./App.css";
 
 export default function App() {
@@ -62,6 +63,7 @@ export default function App() {
         >
           <Routes>
             <Route path="/" element={<LandingPage />} />
+            <Route path="/about-us" element={<AboutUs />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/reviews" element={<ReviewsComponent />} />
             <Route path="/pricing" element={<Pricing />} />

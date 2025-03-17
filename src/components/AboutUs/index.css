@@ -1,0 +1,11 @@
+.about-us-main-section {
+    position: relative;
+    top:80px;
+    height: 100vh;
+    /* top:55px; */
+}
+.about-us-wrapper {
+    background-color: #f5deb3;
+    min-height: 100vh;
+    margin-top: 0;
+}
