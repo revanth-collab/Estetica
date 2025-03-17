@@ -1,0 +1,218 @@
+.pricing-wrapper {
+    min-height: 60vh;
+    padding-top:100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:40px;
+    background-color: #f5deb3;
+}
+.pricing-rate-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+}
+.pricing-rate-main-heading {
+    /* color: #523907ce; */
+    color: rgb(156, 15, 15);
+    font-family: "Poppins",sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+}
+@media screen and (max-width:576px) {
+    .pricing-rate-main-heading{
+        font-size: 27px;
+    }
+    
+}
+
+.pricing-rate-card-container {
+    display: flex;
+    flex-direction: row;
+    gap:25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.pricing-rate-card {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+    border-radius: 15px;
+    border: 1.5px solid transparent;
+    min-width: 300px;
+    height: 430px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    transition: transform 0.5s ease, box-shadow 0.5s ease, background-color 0.4s ease, color 0.4s ease, border 0.4s ease;
+    transform-style: preserve-3d;
+    box-shadow: 0px 6px 15px rgba(129, 91, 15, 0.25); /* Initial soft shadow */
+    color: #523907ce;
+}
+@media screen and (max-width:576px) {
+    .pricing-rate-card {
+        padding:10px;
+    }
+    
+}
+.pricing-rate-card:hover {
+    background: rgba(129, 91, 15, 0.8);
+    color: #fff;
+    box-shadow: 0px 20px 50px rgba(129, 91, 15, 0.7), /* Deep Outer Glow */
+                0px 8px 25px rgba(129, 91, 15, 0.5), /* Mid Soft Glow */
+                inset 0px 3px 10px rgba(255, 255, 255, 0.3); /* Inner Light */
+    transform: translateY(-15px) scale(1.05) rotateX(8deg);
+    border: 1.5px solid rgba(255, 255, 255, 0.6);
+}
+.rate-card-heading {
+    color: rgba(213, 159, 92, 0.757);
+    font-family: "Poppins",sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+}
+.price-rate {
+    color: rgb(187, 43, 43);
+    font-weight: 500;
+    font-size: 16px;
+    font-family: "Poppins",sans-serif;
+}
+.rate-card-bold {
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "Poppins",sans-serif;
+    color: #000;
+}
+.rate-card-para {
+    text-align: center;
+    color: #000;
+    font-weight: 400;
+    font-size: 15px;
+    max-width: 800px;
+}
+.pricing-rate-card:hover .rate-card-para {
+    color: #fff;
+}
+.pricing-rate-card:hover .pricing-button {
+    background-color: #fff;
+    color: rgba(129, 91, 15, 0.8);
+}
+.pricing-button {
+    background-color: rgba(129, 91, 15, 0.8);
+    padding: 7px 12px;
+    border-radius: 7px;
+    border:none;
+    margin-top: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.pricing-button:hover {
+    border-radius: 1px solid black;
+    transform: translateY(-10px);
+}
+.pricing-horizontal {
+    width: 70%;
+    border: 1px solid #000;
+}
+.pricing-span {
+    margin-bottom:30px;
+}
+.us {
+    color: rgb(187, 43, 43);
+}
+.pricing-opportunities {
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    background-color: #faf0e6;
+    min-height: 70vh;
+    padding: 40px;
+    padding-top: 50px;
+}
+.pricing-opportunities-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    flex-wrap: wrap;
+}
+.pricing-opportunities-card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap:5px;
+    border-radius: 15px;
+    border: 1.5px solid transparent;
+    width: 500px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    transition: transform 0.5s ease, box-shadow 0.5s ease, background-color 0.4s ease, color 0.4s ease, border 0.4s ease;
+    transform-style: preserve-3d;
+    box-shadow: 0px 6px 15px rgba(129, 91, 15, 0.25); /* Initial soft shadow */
+    color: #523907ce;
+}
+@media screen and (max-width:576px) {
+    .pricing-opportunities-card {
+        height: auto;
+        width: auto;
+    }
+    
+}
+.pricing-opportunities-card:hover {
+    background: rgba(129, 91, 15, 0.8);
+    color: #fff;
+    box-shadow: 0px 20px 50px rgba(129, 91, 15, 0.7), /* Deep Outer Glow */
+                0px 8px 25px rgba(129, 91, 15, 0.5), /* Mid Soft Glow */
+                inset 0px 3px 10px rgba(255, 255, 255, 0.3); /* Inner Light */
+    transform: translateY(-15px) scale(1.05) rotateX(8deg);
+    border: 1.5px solid rgba(255, 255, 255, 0.6);
+}
+.pricing-oppurtunities-card-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:5px;
+}
+.oppurtunities-icon {
+    font-size: 18px;
+}
+.oppurtunities-top-para {
+    color: rgba(213, 159, 92, 0.757);
+    font-size:14px;
+    font-weight: 500;
+    font-family: "Poppins",sans-serif;
+}
+.oppurtunities-card-heading {
+    color: rgba(213, 159, 92, 0.757);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Poppins",sans-serif;
+}
+.oppurtunities-card-para-cont {
+    max-width: 400px;
+}
+.opp-para {
+    text-align: left;
+    color: #000;
+}
+.opp-bold {
+    font-weight: bold;
+}
+.card-rate-color {
+    color: rgb(221, 57, 57);
+}
+.pricing-opportunities-card:hover .oppurtunities-top-para {
+    color: #fff;
+}
+.pricing-opportunities-card:hover .opp-para {
+    color: #fff;
+}

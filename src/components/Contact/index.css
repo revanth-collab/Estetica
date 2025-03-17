@@ -1,0 +1,256 @@
+.contact-wrapper {
+    background-color: #f5deb3;
+    min-height: 100vh;
+}
+.contact-main-container {
+    position: relative;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    height: auto;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.1s;
+}
+@media screen and (max-width:576px) {
+    .contact-main-container{
+        top:50px;
+    }
+    
+}
+.contact-us-main-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(129, 91, 15, 0.8);
+    padding:6px 15px;
+    border-radius: 50px;
+    margin-top: 40px;
+}
+.contact-us {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 1;
+    font-family: "Poppins",sans-serif;
+}
+.contact-us-main-para {
+    color: rgba(213, 159, 92, 0.757);
+    font-family: "Poppins",sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+}
+.contact-us-span {
+    color: #523907ce;
+}
+.contact-us-para {
+    text-align: center;
+    color: #000;
+    font-weight: 400;
+    font-size: 16px;
+    max-width: 800px;
+}
+.contact-us-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.contact-us-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 28px;
+    gap: 10px;
+    border-radius: 15px;
+    border: 1.5px solid transparent;
+    width: 350px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    transition: transform 0.5s ease, box-shadow 0.5s ease, background-color 0.4s ease, color 0.4s ease, border 0.4s ease;
+    transform-style: preserve-3d;
+    box-shadow: 0px 6px 15px rgba(129, 91, 15, 0.25); /* Initial soft shadow */
+    color: #523907ce;
+    opacity: 0; /* Hide initially */
+    transform: translateY(100px);
+    
+    /* Animation only runs when in viewport */
+    view-timeline-name: --card;
+    animation-timeline: --card;
+    animation-name: appear;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-range: entry 0% cover 30%;
+}
+.contact-image-icon {
+    background-color: #785e0c;
+    padding: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width:65px;
+    height: 65px;
+}
+.contact-image-mail {
+    width: 40px;
+    height: 40px;
+}
+.contact-image-phone {
+    width: 25px;
+    height: 45px;
+}
+.contact-anchor {
+    text-decoration: none;
+    color: #000;
+}
+.contact-us-card:hover {
+    background: rgba(129, 91, 15, 0.8);
+    color: #fff;
+    box-shadow: 0px 20px 50px rgba(129, 91, 15, 0.7), /* Deep Outer Glow */
+                0px 8px 25px rgba(129, 91, 15, 0.5), /* Mid Soft Glow */
+                inset 0px 3px 10px rgba(255, 255, 255, 0.3); /* Inner Light */
+    transform: translateY(-15px) scale(1.05) rotateX(8deg);
+    border: 1.5px solid rgba(255, 255, 255, 0.6);
+}
+@media screen and (max-width: 576px) {
+    .contact-main-container {
+        top: 50px;
+        gap: 10px;
+        padding: 15px;
+    }
+    .contact-us-main-para {
+        font-size: 28px; /* Reduce heading size for small screens */
+    }
+    .contact-us-card {
+        width: 300px;
+        height: 180px;
+    }
+}
+.contact-us-footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 100px;
+}
+@media screen and (max-width:576px) {
+    .contact-us-footer {
+        margin-top: 30px;
+    }
+}
+
+/* Define animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to heading and paragraph */
+.contact-us-main-heading,
+.contact-us-main-para,
+.contact-us-para {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Delay animations for better effect */
+.contact-us-main-heading { animation-delay: 0.2s; }
+.contact-us-main-para { animation-delay: 0.4s; }
+.contact-us-para:nth-of-type(1) { animation-delay: 0.6s; }
+.contact-us-para:nth-of-type(2) { animation-delay: 0.8s; }
+
+
+/* .contact-us-card:nth-child(1) { animation-delay: 1s; }
+.contact-us-card:nth-child(2) { animation-delay: 1.2s; } */
+.contact-us-input {
+    height: 50px;
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    color: #000;
+}
+.contact-comment {
+    width: 80%;
+    height: 120px;
+    border-radius: 10px;
+    padding: 15px;
+}
+.appear-effect {
+    animation: appear 3s ease-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0  cover 30%;
+}
+.contact-comment-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contact-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+}
+.contact-us-button {
+    background: rgba(129, 91, 15, 0.8);
+    padding:8px 15px;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    font-family: "Poppins",sans-serif;
+}
+.google-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+    padding: 20px;
+}
+@media screen and (max-width:576px) {
+    .google-map{
+        margin-top: 50px;
+    }
+    
+}
+.google-map iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    border: none;
+}
+@media screen and (max-width:576px) {
+    .google-map iframe{
+        height: 200px;
+    }
+}

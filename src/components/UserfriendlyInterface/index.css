@@ -1,0 +1,84 @@
+.user-friendly-interface-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 50px;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.user-friendly-main-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(129, 91, 15, 0.8);
+    padding: 6px 15px;
+    border-radius: 50px;
+    width: 150px;
+    align-self: center;
+}
+
+.user-friendly {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 1;
+    font-family: "Poppins", sans-serif;
+}
+
+.user-friendly-heading {
+    color: rgba(213, 159, 92, 0.757);
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 38px;
+    text-align: center;
+}
+
+
+.user-friendly-scroll-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.user-friendly-image-container {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    overflow: hidden;
+    align-items: center;
+}
+
+
+.image-track {
+    display: flex;
+    gap: 20px;
+    animation: scroll-animation 20s linear infinite;
+    align-items: center;
+}
+
+.image-track img {
+    width: 200px;
+    height: 350px;
+    object-fit: contain; /* Ensure full image is visible */
+}
+
+/* Infinite Scrolling Animation */
+@keyframes scroll-animation {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 576px) {
+    .image-track img {
+        width: 150px;
+        height: 300px;
+    }
+}

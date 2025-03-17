@@ -1,8 +1,16 @@
 import NavBar from "../NavBar";
 import OurTeam from "../OurTeam";
 import Rotate3D from "../Rotate3D";
-import AboutUs from "../AboutUs";
 import FooterPage from "../FooterPage";
+import ProviderOurValue from "../ProviderOurValue";
+import FeaturesOfUser from "../FeaturesOfUser";
+import FeaturesForProvider from "../FeaturesForProvider";
+import CustomerProvider from "../CustomerProvider";
+import AboutUsForUser from "../AboutUsForUser";
+import WhyChooseUs from "../WhyChooseUs";
+import PremiumServices from "../PremiumServices";
+import UserfriendlyInterface from "../UserfriendlyInterface";
+import Reviews from "../Reviews";
 import "./index.css";
 
 const LandingPage = () => (
@@ -15,7 +23,15 @@ const LandingPage = () => (
       <div className="our-team-wrapper">
         <OurTeam />
       </div>
-      <AboutUs />
+      <CustomerProvider />  
+      <ProviderOurValue />
+      <FeaturesOfUser />
+      <AboutUsForUser />
+      <FeaturesForProvider />
+      <WhyChooseUs />
+      <PremiumServices />
+      <UserfriendlyInterface />
+      <Reviews />
       <FooterPage />
     </div>
   </>

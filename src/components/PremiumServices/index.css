@@ -1,0 +1,211 @@
+.premium-services-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding:50px;
+    position: relative;
+    min-height: 200vh;
+}
+@media screen and (max-width:576px) {
+    .premium-services-wrapper {
+        padding:10px;
+    }
+}
+
+.premium-services-heading {
+    color: rgba(203, 149, 83, 0.757);
+    font-family: "Poppins",sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+@media screen and (max-width:576px){
+    .premium-services-heading {
+        font-size: 35px;
+        margin-bottom: 0px;
+    }
+}
+.premium-services-span {
+    color: #523907ce;
+}
+.premium-services-card {
+    height: 110vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 80px;
+    gap:30px;
+    position: sticky;
+    top:48px;
+    background-color: #ffebcd ;
+    border-radius: 50px;
+    margin:20px;
+}
+@media screen and (max-width:576px) {
+    .premium-services-card{
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center; */
+        gap:10px;
+        padding:30px 20px;
+        height: 180vh;
+        position: relative;
+    }
+    .size-lr{
+        height:140vh;
+    }
+}
+.premium-services-content-container {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width: 500px;
+}
+@media screen and (max-width:576px) {
+    .premium-services-content-container {
+        width: 280px;
+        padding-left: 5px;
+    }
+}
+.premium-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:5px;
+    width: 220px;
+    background: rgba(129, 91, 15, 0.8);
+    padding:6px 15px;
+    border-radius: 50px;
+}
+.premium-heading {
+    color: rgba(213, 159, 92, 0.757);
+    font-family: "Poppins",sans-serif;
+    font-weight: bold;
+    font-size: 33px;
+}
+@media screen and (max-width:576px) {
+    .premium-heading {
+        font-size:25px;
+    }
+}
+.premium-para {
+    color: #000;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "Poppins",sans-serif;
+}
+.premium-orderlist {
+    display: flex;
+    flex-direction: column;
+    gap:7px;
+    list-style-type: none;
+}
+.premiun-list {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    list-style-type: none;
+}
+.premium-sub-list {
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+.premiump-list-para {
+    font-weight: 500;
+    color: #000;
+    font-family: "Poppins",sans-serif;
+    font-size:12px;
+}
+.premium-bold {
+    font-weight: bold;
+}
+
+
+.premium-services-image-container {
+    border-radius: 15px;
+    padding: 50px 100px;
+    background-image: url("https://wallpaperbat.com/img/856631-stacked-massage-stones-and-lotus-uhd-4k-wallpaper.jpg");
+    background-size: cover;
+    height: 450px;
+    position: relative;
+}
+@media screen and (max-width:576px) {
+    .premium-services-image-container {
+        padding:45px;
+    }
+    
+}
+.premium-services-image {
+    height: 350px;
+    width: 180px;
+}
+.top-star {
+    position: absolute;
+    width: 20px;
+    height:20px;
+    right: 70px;
+    top:30px;
+    color: #fff;
+}
+.right-star {
+    position: absolute;
+    width: 20px;
+    height:20px;
+    right: 70px;
+    bottom:30px;
+    color: #fff;
+}
+.left-star {
+    position: absolute;
+    width: 20px;
+    height:20px;
+    left: 70px;
+    top:30px;
+    color: #fff;
+}
+.bottom-star {
+    position: absolute;
+    width: 20px;
+    height:20px;
+    left: 70px;
+    bottom:30px;
+    color: #fff;
+}
+
+.card-wb {
+    /* background-image: url("https://wallpaperbat.com/img/856631-stacked-massage-stones-and-lotus-uhd-4k-wallpaper.jpg"); */
+    background-color: #3A3E4D;
+    background-size: cover;
+}
+.card-gb{
+    /* background-image: url("https://tse3.mm.bing.net/th?id=OIP.m-Bay7f2-nzFI4g3UANyaQHaDi&pid=Api&P=0&h=220"); */
+    background-color: #577D73;
+    background-size: cover;
+}
+.card-lr {
+    /* background-image: url("https://tse4.mm.bing.net/th?id=OIP.eDdEbw78m-GTBXtm0Ae_YAHaE8&pid=Api&P=0&h=220"); */
+    /* background-color: #c37cbb; */
+    background-color: #A89D9B;
+    background-size: cover;
+}
+.card-image-gb {
+    background-image: url("https://img.freepik.com/premium-photo/spa-beauty-treatment-wellness-background-with-massage-stone-orchid-flowers-towels-burning_274326-219.jpg");
+}
+.card-image-lr {
+    background-image: url("https://tse3.mm.bing.net/th?id=OIP.WLZSPGipk9YNnKXdnqBZhwHaEd&pid=Api&P=0&h=220");
+}
+.card-image-wb {
+    background-image: url("https://tse3.mm.bing.net/th?id=OIP.03soWxVK2qrtLztfZe7ExQHaE6&pid=Api&P=0&h=220");
+}
+.color-wb {
+    color:#e7b6a9;
+}
+.color-gb {
+    color: #E5D0CF;
+}
+.color-lr {
+    /* color: #A7B9DD; */
+    color: #FAF9F5;
+}

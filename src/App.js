@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import FadedPage from "./components/FadedPage";
 import LandingPage from "./components/LandingPage";
-
-
+import Contact from "./components/Contact";
+import ReviewsComponent from "./components/ReviewsComponent";
+import Pricing from "./components/Pricing";
 import "./App.css";
 
 export default function App() {
@@ -12,12 +14,10 @@ export default function App() {
   const [showContent, setShowContent] = useState(false);
 
   useEffect(() => {
-    // Step 1: Hide preloader after 4 seconds
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 4000);
 
-    // Step 2: Show content after 1s delay (after preloader disappears)
     const contentTimer = setTimeout(() => {
       setShowContent(true);
     }, 4000);
@@ -29,39 +29,45 @@ export default function App() {
   }, []);
 
   return (
-    <div className="relative h-screen bg-black text-white overflow-hidden">
-      {/* Preloader Animation */}
-      <AnimatePresence>
-        {isLoading && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0, y: -50 }}
-            transition={{ duration: 1 }}
-            className="fixed inset-0 flex items-center justify-center bg-black fadedPage"
-          >
+    <BrowserRouter>
+      <div className="relative h-screen bg-black text-white overflow-hidden">
+        {/* Preloader Animation */}
+        <AnimatePresence>
+          {isLoading && (
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               exit={{ opacity: 0, y: -50 }}
-              transition={{ duration: 1,delay:0.3}}
+              transition={{ duration: 1 }}
+              className="fixed inset-0 flex items-center justify-center bg-black fadedPage"
             >
-              <FadedPage />
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -50 }}
+                transition={{ duration: 1, delay: 0.3 }}
+              >
+                <FadedPage />
+              </motion.div>
             </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+          )}
+        </AnimatePresence>
 
-      {/* Main Website Content (Position Absolute with Inline Styles) */}
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={showContent ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 1 }}
-        className="flex items-center justify-center h-full w-full app-container"
-      >
-        <LandingPage />
-
-      </motion.div>
-    </div>
+        {/* Main Content with Routing */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={showContent ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 1 }}
+          className="flex items-center justify-center h-full w-full app-container"
+        >
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/reviews" element={<ReviewsComponent />} />
+            <Route path="/pricing" element={<Pricing />} />
+          </Routes>
+        </motion.div>
+      </div>
+    </BrowserRouter>
   );
 }

@@ -1,0 +1,118 @@
+.features-of-user-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+.features-of-user-heading {
+    color: rgba(213, 159, 92, 0.757);
+    font-family: "Poppins",sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    /* scale: 0; */
+    animation: appear 0.8s ease forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+.features-of-user-span {
+    color: #523907ce;
+}
+.features-of-user-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.drop {
+    position: relative;
+    width: 350px;
+    height: 280px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 28px;
+    padding-top: 45px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+    transition: transform 0.5s ease, box-shadow 0.5s ease, background-color 0.4s ease, color 0.4s ease, border 0.4s ease;
+    transform-style: preserve-3d;
+    border: 1.5px solid rgba(129, 91, 15, 0.8);
+    /* border: 1.5px solid transparent; */
+    box-shadow: 0px 6px 15px rgba(129, 91, 15, 0.25); /* Initial soft shadow */
+    color: #523907ce;
+    margin-top: 15px;
+    animation: appear 0.8s ease ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.drop:hover {
+    background: rgba(129, 91, 15, 0.8);
+    color: #fff;
+    box-shadow: 0px 20px 50px rgba(129, 91, 15, 0.7), /* Deep Outer Glow */
+                0px 8px 25px rgba(129, 91, 15, 0.5), /* Mid Soft Glow */
+                inset 0px 3px 10px rgba(255, 255, 255, 0.3); /* Inner Light */
+    transform: translateY(-15px) scale(1.05) rotateX(8deg);
+    border: 1.5px solid rgba(255, 255, 255, 0.6);
+}
+
+/* .drop:hover .feature-user-card-heading, */
+.drop:hover .main-para,
+.drop:hover .fearure-user-para {
+    color: #fff;
+}
+
+.drop:active {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0px 10px 30px rgba(129, 91, 15, 0.4);
+}
+
+.drop::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+@media screen and (max-width:576px) {
+    .drop {
+        width: 300px;
+        height: 280px;
+        padding: 15px;
+    }
+}
+.feature-user-card-heading {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgba(213, 159, 92, 0.757);;
+    margin-bottom: 8px;
+    transition: color 0.4s ease;
+    margin-bottom: 20px;
+}
+.feauture-user-card-span {
+    color: #523907ce;
+}
+.fearure-user-para {
+    text-align: center;
+    color: #000;
+    font-weight: 400;
+    font-size: 15px;
+    transition: color 0.4s ease;
+}

@@ -1,0 +1,171 @@
+/* .ourapp-wrapper {
+    background: linear-gradient(135deg, #7F8C69,#5F6A51);
+    padding: 40px 70px;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 50px;
+    transition: background 0.5s ease;
+} */
+
+.ourapp-wrapper {
+    background-color: #9AA388;
+    padding: 40px 70px;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+    flex-wrap: wrap;
+    margin:50px;
+    transition: all 0.3s ease-in-out;
+}
+.ourapp-wrapper:hover {
+    background-color: #5F6A51;
+}
+@media screen and (max-width:576px) {
+    .ourapp-wrapper{
+        padding: 40px 25px;
+        width:340px;
+        margin: 20px;
+    }
+}
+.our-app-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 500px;
+}
+.ourapp-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(129, 91, 15, 0.8);
+    padding: 6px 15px;
+    border-radius: 50px;
+    width: 140px;
+}
+.ourapp-top-heading {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: "Poppins", sans-serif;
+}
+.ourapp-heading {
+    color: #E0E9CE;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    transition: color 0.3s ease-in-out;
+}
+.ourapp-heading:hover {
+    color: #D1E0B1;
+}
+@media screen and (max-width:576px) {
+    .ourapp-heading {
+        font-size: 28px;
+    }
+}
+.ourapp-para {
+    color: #181817;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+}
+.apps-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.app-store{
+    border-radius: 10px;
+    padding: 7px 20px;
+    background-color:#E0E9CE ;
+    color: #9AA388;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.app-store:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+.app-store-sub-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    cursor: pointer;
+}
+.app-store-heading {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    color: #7F8C69;
+    margin-bottom: 0;
+}
+.app-store-para {
+    color: #7F8C69;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 0;
+}
+@media screen and (max-width:576px) {
+    .app-store{
+        padding: 8px 18px;
+    }
+    .app-store-heading {
+        font-size: 10px;
+    }
+    .app-store-para {
+        font-size: 12px;
+    }
+}
+.our-app-icon {
+    color: #9AA388;
+    font-size:30px;
+    transition: transform 0.3s ease-in-out;
+}
+.our-app-icon:hover {
+    transform: scale(1.3);
+}
+.our-app-image-container {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:768px) {
+    .our-app-image-container {
+        width: 100%;
+    }
+}
+@media screen and (max-width:576px) {
+    .our-app-image-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+.our-app-image-container img {
+    height: 420px;
+    width: 210px;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.our-app-image-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+.our-app-anchor {
+    text-decoration: none;
+}

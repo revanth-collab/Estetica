@@ -1,0 +1,195 @@
+.about-us-for-user-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: #ffe4cd;
+    padding: 40px;
+    margin-top: 30px;
+    background-image: url("https://wallpaperaccess.com/full/3776356.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.about-us-for-user-heading {
+    color: rgba(255, 255, 255, 0.95);
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* .about-us-for-user-span {
+    color: rgba(200, 140, 60, 0.95);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+} */
+
+.about-us-for-user-span {
+    color: #d4a373;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+.about-us-for-user-glass {
+    position: relative;
+    width: 80%;
+    height: auto;
+    min-height: 80vh;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 50px 20px 50px 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3);
+    transform: scale(0.95);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+@media screen and (max-width:576px) {
+    .about-us-for-user-glass {
+        width: 90%;
+        padding: 50px 0px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.about-us-for-user-glass:hover {
+    transform: scale(1);
+    /* box-shadow: inset 0px 6px 15px rgba(255, 255, 255, 0.15), 
+                0px 15px 40px rgba(0, 0, 0, 0.4); */
+}
+
+.about-us-count-container {
+    position: relative;
+    width: 250px;
+    height: 345px;
+}
+@media screen and (max-width:768px) {
+    .about-us-count-container {
+        margin-left:20px;
+        display: none;
+    }
+}
+
+.about-us-count {
+    background-color: #ffe4cd;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    transition: all 0.3s ease-in-out;
+}
+.about-us-count:hover {
+    background: rgba(129, 91, 15, 0.8);
+    color: #fff;
+    box-shadow: 0px 20px 50px rgba(129, 91, 15, 0.7);
+    transform: translateY(-10px) scale(1.1);
+    /* border: 1.5px solid rgba(255, 255, 255, 0.6); */
+}
+.count-download {
+    top: 0px;
+    left:60px;
+}
+.count-reviews {
+    top: 120px;
+    left: 0px;
+}
+.count-countries {
+    top:120px;
+    left: 120px;
+}
+.count-followers {
+    top:240px;
+    left: 60px;
+}
+
+
+.about-us-count-para {
+    /* color: rgba(200, 140, 60, 0.95); */
+    color: #d4a373;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+}
+
+.about-us-count:hover .about-us-count-para {
+    color: #fff;
+}
+
+.num {
+    color:#000;
+}
+.about-us-for-user-image {
+    height: 100%;
+    position: relative;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:576px) {
+    .about-us-for-user-image {
+        top:center;
+        width:100%;
+    }
+}
+@media screen and (max-width:768px) {
+    .about-us-for-user-image {
+        width:100%; 
+    }
+}
+.about-us-for-user-image img  {
+    height: 380px;
+    width: 200px;
+    transition: 0.5s;
+}
+.about-us-for-user-glass:hover .about-us-for-user-image img {
+    height: 350px;
+    width: 180px;
+    /* margin-bottom: 30px; */
+}
+@media screen and (max-width:576px) {
+    .about-us-for-user-image img {
+        width: 150px;
+        height: 300px;
+        /* margin-left:20px; */
+    }
+    .about-us-for-user-glass:hover .about-us-for-user-image img {
+        margin-left: 0px;
+    }
+}
+
+.about-us-for-user-content-container {
+    position: relative;
+    width: 300px;
+    right: 0;
+    margin-left:40px;
+}
+@media screen and (max-width:576px) {
+    .about-us-for-user-content-container {
+        width: 200px;
+        bottom: 0;
+        left: 0;
+        margin-right: 35px;
+    }
+}
+.about-us-for-user-content {
+    margin-bottom: 10px;
+    color: #000;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: "Poppins",sans-serif;
+}

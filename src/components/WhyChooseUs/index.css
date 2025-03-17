@@ -1,0 +1,121 @@
+.why-choose-us-wrapper {
+    padding: 50px 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    background-color: #ffebcd;;
+}
+@media screen and (max-width:576px) {
+    .why-choose-us-wrapper {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+}
+
+.why-choose-us-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    gap: 15px;
+    width: 400px;
+}
+@media screen and (max-width:576px) {
+    .why-choose-us-container {
+        width: 300px;
+    }
+}
+.why-choose-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    background: rgba(129, 91, 15, 0.8);
+    padding:6px 15px;
+    border-radius: 50px;
+    max-width:180px;
+}
+.why-icon {
+    color: #000;
+    font-size: 18px;
+}
+.why-choose-us-title {
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    /* letter-spacing: 1; */
+    font-family: "Poppins",sans-serif;
+}
+.why-choose-us-heading {
+    color: rgba(213, 159, 92, 0.757);
+    font-family: "Poppins",sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    /* text-align: center; */
+}
+.why-choose-us-span {
+    color: #523907ce;
+}
+.why-choose-us-para {
+    color: #000;
+    font-weight: 400;
+    font-size: 15px;
+    max-width: 800px;
+    font-family: "Poppins",sans-serif;
+}
+.why-choose-us-orderlist{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap:7px;
+}
+.why-choose-us-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+}
+.why-mark-icon {
+    /* height:50px; */
+    margin-top: 5px;
+    width:55px;
+    /* align-self: flex-start; */
+    color: #523907ce;
+    font-weight: bold;
+}
+.why-choose-us-bold {
+    font-weight: bold;
+}
+.why-choose-us-image-container {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/024/399/489/large_2x/natural-spa-background-illustration-ai-generative-free-photo.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 500px;
+    height: 500px;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top:auto;
+    margin-bottom: 10px;
+    position: relative;
+}
+.why-choose-us-image-container img {
+    height: 420px;
+    width: 200px;
+    position: absolute;
+    left:30%;
+
+}
+@media screen and (max-width:576px) {
+    .why-choose-us-image-container {
+        width:330px;
+        height: 400px;
+    }
+    .why-choose-us-image-container img {
+        height: 350px;
+        width:180px;
+        left:23%;
+    }
+}
