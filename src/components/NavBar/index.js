@@ -8,8 +8,9 @@ const NavBar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 100) { // Change 100 to the desired scroll threshold
-                setNavbarColor("rgb(67, 65, 65)"); // New color after scrolling
+            if (window.scrollY > 50) {
+                // setNavbarColor("rgb(67, 65, 65)"); 
+                setNavbarColor("#fff")
                 // setNavbarColor("#ffebcd")
             } else {
                 setNavbarColor("transparent");
@@ -34,7 +35,7 @@ const NavBar = () => {
         <div className="navbar" style={{ backgroundColor: navbarColor }}>
             <div className="logo">
                 <a href="#home">
-                    <img src="https://www.esteticanow.com/images/est/logo.png" alt="Website Logo" className="navbar-logo"/>
+                    <img src="images\est_logo25.png" alt="Website Logo" className="navbar-logo"/>
                 </a>
             </div>
             <div className="laptop-links">

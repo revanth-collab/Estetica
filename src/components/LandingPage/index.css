@@ -30,16 +30,28 @@
     }
 }
 
+.herosection-wrapper {
+    position: relative;
+    top:80px;
+    padding:30px;
+}
+@media screen and (max-width:576px) {
+    .herosection-wrapper {
+        top:30px;
+    }
+}
 .our-team-wrapper {
     position: relative;
     width: 100%;
     height: auto;
     padding: 20px 0; /* Adds spacing so it doesn't push other components */
     top:0;
+    margin-top: 70px;
 }
 @media screen and (max-width:320px) {
     .our-team-wrapper {
         padding-top: 20px;
+        margin-top: 0;
     }
 }
 @media screen and (min-width:321px) and (max-width:576px) {
@@ -47,5 +59,6 @@
         padding: 0;
         top:100px;
         padding-bottom: 100px;
+        margin-top: 0;
     }
 }

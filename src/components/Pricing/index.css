@@ -216,3 +216,11 @@
 .pricing-opportunities-card:hover .opp-para {
     color: #fff;
 }
+
+.pricing-parallax-bg {
+    background: url("https://wallpaperaccess.com/full/438021.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: white;
+}

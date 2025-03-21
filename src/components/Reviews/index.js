@@ -81,7 +81,7 @@ const Reviews = () => {
                 <FaRegStar className="review-star"/>
                 <FaRegStar className="review-star"/>
             </div>
-            <div className="reviews-card-container">
+            <div className="reviews-card-container ">
                 <div className="review-card">
                     <div className="review-card-top">
                         <div className="review-image-container">

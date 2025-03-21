@@ -82,7 +82,7 @@ const AboutUsForUser = () => {
         <div className="about-us-for-user-container">
             <h1 className="about-us-for-user-heading">About Us For <span className="about-us-for-user-span">Users</span></h1>
             <div className="about-us-for-user-glass">
-                <div className="about-us-count-container">
+                {/* <div className="about-us-count-container">
                     <div className="about-us-count count-download">
                         <p className="about-us-count-para num" data-val="17">0<span>M+</span></p>
                         <p className="about-us-count-para">Download</p>
@@ -99,14 +99,16 @@ const AboutUsForUser = () => {
                         <p className="about-us-count-para num" data-val="8">0<span>M+</span></p>
                         <p className="about-us-count-para">Followers</p>
                     </div>
-                </div>
+                </div> */}
                 <div className="about-us-for-user-image">
                     <img src="https://www.esteticanow.com/images/est_new/about_us_users.png" alt="UserScreen" />
                 </div>
-                <div className="about-us-for-user-content-container">
-                    <p className="about-us-for-user-content">Estetica transforms your beauty and wellness journey into an effortless, enjoyable experience.</p>
-                    <p className="about-us-for-user-content">We’ve curated a vast selection of trusted salons, clinics, and spas, all accessible in one convenient platform—so you can easily explore, compare, and book the services that suit you best.</p>
-                    <p className="about-us-for-user-content">Discover exclusive offers, browse authentic reviews, and gain insights from expert recommendations, all tailored to help you make the most of your self-care routine.</p>
+                <div className="aligning-container">
+                    <div className="about-us-for-user-content-container">
+                        <p className="about-us-for-user-content">Estetica transforms your beauty and wellness journey into an effortless, enjoyable experience.</p>
+                        <p className="about-us-for-user-content">We’ve curated a vast selection of trusted salons, clinics, and spas, all accessible in one convenient platform—so you can easily explore, compare, and book the services that suit you best.</p>
+                        <p className="about-us-for-user-content">Discover exclusive offers, browse authentic reviews, and gain insights from expert recommendations, all tailored to help you make the most of your self-care routine.</p>
+                    </div>
                 </div>
             </div>
         </div>

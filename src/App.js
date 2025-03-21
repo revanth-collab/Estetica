@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
+
 import FadedPage from "./components/FadedPage";
 import LandingPage from "./components/LandingPage";
 import Contact from "./components/Contact";

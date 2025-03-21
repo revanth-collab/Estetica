@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import ScrollReveal from "scrollreveal";
 import "./index.css";
 
 const AboutUsScroll = () => {
@@ -7,6 +8,16 @@ const AboutUsScroll = () => {
   useEffect(() => {
     let scrollAmount = 0;
     let direction = -1; // Leftward movement
+
+    ScrollReveal().reveal(".about-scroll",{
+        duration:1500,
+        distance:"60px",
+        delay:50,
+        easing:"ease-in-out",
+        reset:true,
+        once:false,
+        viewFactor:0.3
+    })
 
     const scrollImages = () => {
       if (!imageTrackRef.current) return;
@@ -28,25 +39,33 @@ const AboutUsScroll = () => {
   }, []);
 
   return (
-    <div className="slider-container-ab">
+    <div className="slider-container-ab about-scroll">
       <div className="image-track-ab" ref={imageTrackRef}>
         {[
-          "https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
-          "https://images.unsplash.com/photo-1610194352361-4c81a6a8967e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80",
-          "https://images.unsplash.com/photo-1618202133208-2907bebba9e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8fGVufDB8MHx8&auto=format&fit=crop&w=1770&q=80",
-          "https://images.unsplash.com/photo-1495805442109-bf1cf975750b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8fGVufDB8MHx8&auto=format&fit=crop&w=1770&q=80",
+          "https://www.esteticanow.com/images/est/abt1.png",
+          "https://www.esteticanow.com/images/est/abt2.png",
+          "https://www.esteticanow.com/images/est/abt3.png",
+          "https://www.esteticanow.com/images/est/abt4.png",
+          "https://www.esteticanow.com/images/est/abt5.png",
+          "https://www.esteticanow.com/images/est/abt6.png",
         ].map((src, index) => (
-          <img key={index} className="image-ab" src={src} alt={`Slider ${index + 1}`} />
+          <div className="image-ab-con">
+            <img key={index} className="image-ab" src={src} alt={`Slider ${index + 1}`} />
+          </div>
         ))}
         
         {/* Duplicate images to create an infinite effect */}
         {[
-          "https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
-          "https://images.unsplash.com/photo-1610194352361-4c81a6a8967e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80",
-          "https://images.unsplash.com/photo-1618202133208-2907bebba9e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8fGVufDB8MHx8&auto=format&fit=crop&w=1770&q=80",
-          "https://images.unsplash.com/photo-1495805442109-bf1cf975750b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8fGVufDB8MHx8&auto=format&fit=crop&w=1770&q=80",
+          "https://www.esteticanow.com/images/est/abt1.png",
+          "https://www.esteticanow.com/images/est/abt2.png",
+          "https://www.esteticanow.com/images/est/abt3.png",
+          "https://www.esteticanow.com/images/est/abt4.png",
+          "https://www.esteticanow.com/images/est/abt5.png",
+          "https://www.esteticanow.com/images/est/abt6.png",
         ].map((src, index) => (
-          <img key={`duplicate-${index}`} className="image-ab" src={src} alt={`Slider ${index + 1}`} />
+          <div className="image-ab-con">
+            <img key={`duplicate-${index}`} className="image-ab" src={src} alt={`Slider ${index + 1}`} />
+          </div>
         ))}
       </div>
     </div>

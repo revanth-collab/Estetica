@@ -49,7 +49,7 @@ const Pricing = () => {
                 <p className="pricing-span rate-card-para">Not sure what to choose? <Link to="/contact" className="us"><span className="price-rate">Contact us!</span></Link></p>
             </div>
         </div>
-        <div className="pricing-opportunities">
+        <div className="pricing-opportunities pricing-parallax-bg">
             <h1 className="pricing-rate-main-heading">Enhanced Marketing & Business Growth Opportunities</h1>
             <div className="pricing-opportunities-card-container">
                 <div className="pricing-opportunities-card">
