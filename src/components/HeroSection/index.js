@@ -6,7 +6,9 @@ const HeroSection = () => {
     <div className="hero-section-wrapper">
       {/* Content Section */}
       <div className="hero-section-content-container">
-        <h1 className="hero-content-heading">Estetica</h1>
+        <div className="gold-text-container">
+          <h1 className="hero-content-heading" data-heading="Estetica">Estetica</h1>
+        </div>
         <p className="hero-content-para">
           Your all-in-one appointment and service booking app tailored for beauty and wellness
         </p>
