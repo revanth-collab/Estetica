@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import "./index.css";
 import ScrollReveal from "scrollreveal";
+import bgImage from "./bgImage.jpg"
 
 const AboutUsForUser = () => {
     useEffect(() => {
@@ -79,7 +80,7 @@ const AboutUsForUser = () => {
     }, []);
 
     return (
-        <div className="about-us-for-user-container">
+        <div className="about-us-for-user-container" style={{ backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url(${bgImage})` }}>
             <h1 className="about-us-for-user-heading">About Us For <span className="about-us-for-user-span">Users</span></h1>
             <div className="about-us-for-user-glass">
                 {/* <div className="about-us-count-container">
