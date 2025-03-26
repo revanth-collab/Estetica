@@ -62,7 +62,7 @@ const PremiumServices = () => {
                 </ul>
             </div>
             <div className="premium-services-image-container card-image-wb">
-                <img src="	https://www.esteticanow.com/images/est_new/service.png" className="premium-services-image" alt="Wellness and Beauty"/>
+                <img src="/images/UserImages/service-page.png" className="premium-services-image" alt="Wellness and Beauty"/>
                 <img src="https://www.esteticanow.com/images/bigstar_dark.png" className="top-star" alt="star"/>
                 <img src="https://www.esteticanow.com/images/bigstar_dark.png" className="bottom-star" alt="star"/>
                 <img src="https://www.esteticanow.com/images/bigstar_dark.png" className="left-star" alt="star"/>
@@ -73,7 +73,7 @@ const PremiumServices = () => {
         </div>
         <div className="premium-services-card card-gb">
             <div className="premium-services-image-container card-image-gb">
-                <img src="https://www.esteticanow.com/images/est_new/new_est_bss_1.png" className="premium-services-image" alt="Wellness and Beauty"/>
+                <img src="/images/ProviderImages/home-page.png" className="premium-services-image" alt="Wellness and Beauty"/>
                 <img src="https://www.esteticanow.com/images/bigstar_dark.png" className="top-star" alt="star"/>
                 <img src="https://www.esteticanow.com/images/bigstar_dark.png" className="bottom-star" alt="star"/>
                 <img src="https://www.esteticanow.com/images/bigstar_dark.png" className="left-star" alt="star"/>
@@ -118,13 +118,11 @@ const PremiumServices = () => {
                 </ul>
             </div>
             <div className="premium-services-image-container card-image-lr">
-                <img src="	https://www.esteticanow.com/images/est_new/wallet.png" className="premium-services-image" alt="Wellness and Beauty"/>
+                <img src="/images/UserImages/wallet-page.png" className="premium-services-image" alt="Wellness and Beauty"/>
                 <img src="https://www.esteticanow.com/images/bigstar_dark.png" className="top-star" alt="star"/>
                 <img src="https://www.esteticanow.com/images/bigstar_dark.png" className="bottom-star" alt="star"/>
                 <img src="https://www.esteticanow.com/images/bigstar_dark.png" className="left-star" alt="star"/>
                 <img src="https://www.esteticanow.com/images/bigstar_dark.png" className="right-star" alt="star"/>
-
-
             </div>
         </div>
     </div>)

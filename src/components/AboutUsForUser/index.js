@@ -101,7 +101,7 @@ const AboutUsForUser = () => {
                     </div>
                 </div> */}
                 <div className="about-us-for-user-image">
-                    <img src="https://www.esteticanow.com/images/est_new/about_us_users.png" alt="UserScreen" />
+                    <img src="/images/UserImages/home-page.png" alt="UserScreen" />
                 </div>
                 <div className="aligning-container">
                     <div className="about-us-for-user-content-container">

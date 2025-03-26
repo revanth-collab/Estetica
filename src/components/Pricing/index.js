@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom"
+// import {Link} from "react-router-dom"
 import NavBar from "../NavBar"
 import Footer from "../FooterPage"
 
@@ -12,7 +12,7 @@ const Pricing = () => {
     return (
         <>
         <NavBar />
-        <div className="pricing-wrapper">
+        {/* <div className="pricing-wrapper">
             <div className="pricing-rate-container">
                 <h1 className="pricing-rate-main-heading">Best Plans For Providers</h1>
                 <div className="pricing-rate-card-container">
@@ -48,7 +48,7 @@ const Pricing = () => {
                 </div>
                 <p className="pricing-span rate-card-para">Not sure what to choose? <Link to="/contact" className="us"><span className="price-rate">Contact us!</span></Link></p>
             </div>
-        </div>
+        </div> */}
         <div className="pricing-opportunities pricing-parallax-bg">
             <h1 className="pricing-rate-main-heading">Enhanced Marketing & Business Growth Opportunities</h1>
             <div className="pricing-opportunities-card-container">
@@ -61,7 +61,7 @@ const Pricing = () => {
                     <div className="oppurtunities-card-para-cont">
                         <p className="rate-card-para opp-para">Providers can pay an additional fee to have their business featured at the top of search results for a week or month.</p>
                     </div>
-                    <p className="price-rate opp-bold">Pricing: <span className="price-rate card-rate-color">₹500 - ₹1,000 per week</span></p>
+                    {/* <p className="price-rate opp-bold">Pricing: <span className="price-rate card-rate-color">₹500 - ₹1,000 per week</span></p> */}
                 </div>
                 <div className="pricing-opportunities-card">
                     <div className="pricing-oppurtunities-card-top">
@@ -72,7 +72,7 @@ const Pricing = () => {
                     <div className="oppurtunities-card-para-cont">
                         <p className="rate-card-para opp-para">Providers can place additional banners on the app’s homepage, service category pages, or search results pages.</p>
                     </div>
-                    <p className="price-rate opp-bold">Pricing: <span className="price-rate card-rate-color"> ₹1,000 - ₹2,000 per month</span></p>
+                    {/* <p className="price-rate opp-bold">Pricing: <span className="price-rate card-rate-color"> ₹1,000 - ₹2,000 per month</span></p> */}
                 </div>
                 <div className="pricing-opportunities-card">
                     <div className="pricing-oppurtunities-card-top">
@@ -83,7 +83,7 @@ const Pricing = () => {
                     <div className="oppurtunities-card-para-cont">
                         <p className="rate-card-para opp-para">Charge providers to promote their reels as part of targeted marketing campaigns within the app.</p>
                     </div>
-                    <p className="price-rate opp-bold">Pricing: <span className="price-rate card-rate-color">₹300 - ₹500 per promoted reel</span></p>
+                    {/* <p className="price-rate opp-bold">Pricing: <span className="price-rate card-rate-color">₹300 - ₹500 per promoted reel</span></p> */}
                 </div>
                 <div className="pricing-opportunities-card">
                     <div className="pricing-oppurtunities-card-top">
@@ -94,7 +94,7 @@ const Pricing = () => {
                     <div className="oppurtunities-card-para-cont">
                         <p className="rate-card-para opp-para">Providers can pay for advanced targeting features in their campaigns (e.g., age, location, gender).</p>
                     </div>
-                    <p className="price-rate opp-bold">Pricing: <span className="price-rate card-rate-color">₹500 - ₹1,500 per campaign</span></p>
+                    {/* <p className="price-rate opp-bold">Pricing: <span className="price-rate card-rate-color">₹500 - ₹1,500 per campaign</span></p> */}
                 </div>
                 <div className="pricing-opportunities-card">
                     <div className="pricing-oppurtunities-card-top">
@@ -105,7 +105,7 @@ const Pricing = () => {
                     <div className="oppurtunities-card-para-cont">
                         <p className="rate-card-para opp-para">Manage additional employees for home services in higher-tier plans. Includes up to 5 employees in the basic plan, with options to add more.</p>
                     </div>
-                    <p className="price-rate opp-bold">Pricing: <span className="price-rate card-rate-color">₹50 - ₹100 per additional employee per month</span></p>
+                    {/* <p className="price-rate opp-bold">Pricing: <span className="price-rate card-rate-color">₹50 - ₹100 per additional employee per month</span></p> */}
                 </div>
                 <div className="pricing-opportunities-card">
                     <div className="pricing-oppurtunities-card-top">
@@ -127,7 +127,7 @@ const Pricing = () => {
                     <div className="oppurtunities-card-para-cont">
                         <p className="rate-card-para opp-para">Offer sessions for providers needing assistance in optimizing their business on Estetica.</p>
                     </div>
-                    <p className="price-rate opp-bold">Pricing: <span className="price-rate card-rate-color">₹500 - ₹1,000 per session</span></p>
+                    {/* <p className="price-rate opp-bold">Pricing: <span className="price-rate card-rate-color">₹500 - ₹1,000 per session</span></p> */}
                 </div>
                 <div className="pricing-opportunities-card">
                     <div className="pricing-oppurtunities-card-top">
@@ -138,7 +138,7 @@ const Pricing = () => {
                     <div className="oppurtunities-card-para-cont">
                         <p className="rate-card-para opp-para">Gain access to in-depth analytics, including customer behavior, peak times, and detailed booking trends.</p>
                     </div>
-                    <p className="price-rate opp-bold">Pricing: <span className="price-rate card-rate-color">₹500 - ₹1,000 per month</span></p>
+                    {/* <p className="price-rate opp-bold">Pricing: <span className="price-rate card-rate-color">₹500 - ₹1,000 per month</span></p> */}
                 </div>
             </div>
         </div>

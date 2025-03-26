@@ -35,7 +35,7 @@ const NavBar = () => {
         <div className="navbar" style={{ backgroundColor: navbarColor }}>
             <div className="logo">
                 <a href="#home">
-                    <img src="images\est_logo25.png" alt="Website Logo" className="navbar-logo"/>
+                    <img src="images/est_logo25.png" alt="Website Logo" className="navbar-logo"/>
                 </a>
             </div>
             <div className="laptop-links">

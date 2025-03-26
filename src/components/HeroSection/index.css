@@ -33,7 +33,7 @@
       flex-direction: column;
       /* align-items: center; */
     }
-  }
+}
 
 
 .hero-section-content-container {
@@ -52,26 +52,26 @@
     }
     
 }
+.hero-section-anchor-card-link {
+    text-decoration: none;
+}
 
 .hero-content-heading {
     font-size: 64px;
     font-family: "Playfair Display", serif;
     font-weight: 700;
     text-transform: uppercase;
-    color: #2c3e50;
+    /* color: #2c3e50; */
+    color: #b8860b;
     letter-spacing: 2px;
     transition: color 0.3s ease;
-  }
-
-.hero-content-heading:hover {
-    color: #b8860b;
 }
 .hero-content-para {
     font-size: 22px;
     font-family: "Montserrat", sans-serif;
     line-height: 1.8;
     color: #555;
-  }
+}
 .hero-content-sub-para {
     font-size: 18px;
     font-family: "Lato", sans-serif;
@@ -161,7 +161,7 @@
     padding: 15px 30px;
     border-radius: 12px;
     transition: transform 0.3s, box-shadow 0.3s;
-  }
+}
 @media screen and (max-width:576px) {
     .hero-app-card {
         gap:10px;
@@ -185,24 +185,24 @@
 .hero-app-icon {
     font-size: 32px;
     color: #2c3e50;
-  }
+}
 @media screen and (max-width:576px) {
     .hero-app-icon {
         font-size: 25px;
     }
 }
-  .hero-app-para {
+.hero-app-para {
     font-size: 14px;
     font-family: "Roboto", sans-serif;
     color: #777;
-  }
+}
   
-  .hero-app-content {
+.hero-app-content {
     font-size: 20px;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     color: #333;
-  }
+}
 
 @media screen and (max-width:576px) {
     .hero-app-content {

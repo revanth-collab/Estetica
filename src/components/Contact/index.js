@@ -43,15 +43,15 @@ const Contact = () => {
                 <div className="contact-us-card-container fade-in">
                     <div className="contact-us-card fade-in">
                         <div className="contact-image-icon">
-                            <img src="https://www.esteticanow.com/images/mail_icon.png" alt="mail-image" className="contact-image-mail" />
+                            <img src="/images/cardIcons/mail_icon.png" alt="mail-image" className="contact-image-mail" />
                         </div>
                         <p>Email us: <a href="mailto:support@esteticanow.com" className="contact-anchor">support@esteticanow.com</a></p>
                     </div>
                     <div className="contact-us-card fade-in">
                         <div className="contact-image-icon">
-                            <img src="https://www.esteticanow.com/images/phone_icon.png" alt="mail-image" className="contact-image-phone" />
+                            <img src="/images/cardIcons/phone_icon.png" alt="mail-image" className="contact-image-phone" />
                         </div>
-                        <p>Call us: <a href="tel:+917799327779" className="contact-anchor">+91 77993 27779</a></p>
+                        <p>Whatsapp us: <a href="tel:+919063485299" className="contact-anchor">+91 90634 85299</a></p>
                     </div>
                     
                 </div>

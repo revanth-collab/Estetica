@@ -11,20 +11,20 @@ const UserfriendlyInterface = () => (
             <div className="user-friendly-image-container">
                 {/* Duplicating images for smooth infinite scroll */}
                 <div className="image-track">
-                    <img src="https://www.esteticanow.com/images/est_new/slider_service.png" alt="user-app-image"/>
-                    <img src="https://www.esteticanow.com/images/est_new/slider_near_by.png" alt="user-app-image"/>
-                    <img src="https://www.esteticanow.com/images/est_new/slider_wallet.png" alt="user-app-image"/>
-                    <img src="https://www.esteticanow.com/images/est_new/slider_about_us_users.png" alt="user-app-image"/>
-                    <img src="https://www.esteticanow.com/images/est_new/slider_new_y_choose.png" alt="user-app-image"/>
-                    <img src="https://www.esteticanow.com/images/est_new/slider_new_est_cat_1.png" alt="user-app-image"/>
+                    <img src="/images/UserImages/service-page.png" alt="user-app-image"/>
+                    <img src="/images/UserImages/near-by.png" alt="user-app-image"/>
+                    <img src="/images/UserImages/wallet-page.png" alt="user-app-image"/>
+                    <img src="/images/UserImages/home-page.png" alt="user-app-image"/>
+                    <img src="/images/ProviderImages/home-page.png" alt="user-app-image"/>
+                    <img src="/images/UserImages/home-page.png" alt="user-app-image"/>
                     
                     {/* Duplicate images for seamless scrolling */}
-                    <img src="https://www.esteticanow.com/images/est_new/slider_service.png" alt="user-app-image"/>
-                    <img src="https://www.esteticanow.com/images/est_new/slider_near_by.png" alt="user-app-image"/>
-                    <img src="https://www.esteticanow.com/images/est_new/slider_wallet.png" alt="user-app-image"/>
-                    <img src="https://www.esteticanow.com/images/est_new/slider_about_us_users.png" alt="user-app-image"/>
-                    <img src="https://www.esteticanow.com/images/est_new/slider_new_y_choose.png" alt="user-app-image"/>
-                    <img src="https://www.esteticanow.com/images/est_new/slider_new_est_cat_1.png" alt="user-app-image"/>
+                    <img src="/images/UserImages/service-page.png" alt="user-app-image"/>
+                    <img src="/images/UserImages/near-by.png" alt="user-app-image"/>
+                    <img src="/images/UserImages/wallet-page.png" alt="user-app-image"/>
+                    <img src="/images/UserImages/home-page.png" alt="user-app-image"/>
+                    <img src="/images/ProviderImages/home-page.png" alt="user-app-image"/>
+                    <img src="/images/UserImages/home-page.png" alt="user-app-image"/>
                 </div>
             </div>
         </div>

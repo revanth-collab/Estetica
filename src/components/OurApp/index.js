@@ -34,7 +34,7 @@ const OurApp = () => (
             </div>
         </div>
         <div className="our-app-image-container">
-            <img src="https://www.esteticanow.com/images/est_new/our_app.png" alt="Our App-Image" />
+            <img src="/images/UserImages/home-page.png" alt="Our App-Image" />
         </div>
     </div>
 )

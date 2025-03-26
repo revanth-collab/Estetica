@@ -60,9 +60,9 @@ const AboutUs = () => {
                     <h1 className="about-section-heading">About <span className="about-us-span">Us</span></h1>
                     {/* <p className="about-us-top-para">Estetica transforms your beauty and wellness journey into an effortless, enjoyable experience.</p> */}
                     {/* <p className="sub-para">We’ve curated a vast selection of trusted salons, clinics, and spas, all accessible in one convenient platform.</p> */}
-                    <p className="about-us-top-para">Estetica transforms your beauty and wellness journey into an effortless, enjoyable experience<span><img src="https://img.freepik.com/free-photo/young-woman-mask-face-relaxing-spa-salon_176420-7580.jpg?t=st=1739942601~exp=1739946201~hmac=77651bfba4e38887ba2a72fd3e176ee99b5e2b5a0bd20a66976c509631197372&w=996" alt="min-image" className="micro-image" /></span> . We’ve curated a vast selection of trusted salons, clinics, and spas, all accessible in one convenient platform.</p>
+                    <p className="about-us-top-para">Estetica transforms your beauty and wellness journey into an effortless, enjoyable experience<span><img src="/images/AllImages/about-image-1.jpg" alt="min-image" className="micro-image" /></span> . We’ve curated a vast selection of trusted salons, clinics, and spas, all accessible in one convenient platform.</p>
                     {/* <p className="sub-para">Our commitment to trust, convenience, and quality guarantees that each booking meets the highest standards. Estetica equips you with complete, transparent information on providers, prices, and availability, empowering you to make choices that align with your unique needs and lifestyle.</p> */}
-                    <p className="sub-para">Whether you're looking to refresh your look, unwind with a spa day <span><img src="https://img.freepik.com/free-photo/make-up-artist-getting-model-ready-photoshootin_23-2149305131.jpg?t=st=1739942767~exp=1739946367~hmac=673c7f4314cf3c4d00ea1cc4798d6e9cb961c696bb6eb5012ef74264fdaaa618&w=996" alt="min-image" className="micro-image" /></span> , or indulge in advanced skincare treatments. Estetica connects you with top-rated professionals and brings the world of beauty and wellness directly to your fingertips.</p>
+                    <p className="sub-para">Whether you're looking to refresh your look, unwind with a spa day <span><img src="/images/HeroImages/hero-main-1.avif" alt="min-image" className="micro-image" /></span> , or indulge in advanced skincare treatments. Estetica connects you with top-rated professionals and brings the world of beauty and wellness directly to your fingertips.</p>
                 </div>
 
                 <AboutUsScroll />
@@ -90,7 +90,7 @@ const AboutUs = () => {
                                 <div className="provider-card">
                                     <div className="provider-content-container">
                                         <div className="provider-image-icon">
-                                            <img src="https://www.esteticanow.com/images/ourvalue_3.png" alt="provider-image" className="provider-image" />
+                                            <img src="/images/cardIcons/ourvalue_3.png" alt="provider-image" className="provider-image" />
                                         </div>
                                         <div className="provider-sub-content">
                                             <h1 className="provider-content-heading">User Convenience</h1>
@@ -103,7 +103,7 @@ const AboutUs = () => {
                                 <div className="provider-card">
                                     <div className="provider-content-container">
                                         <div className="provider-image-icon">
-                                            <img src="https://www.esteticanow.com/images/ourvalue_1.png" alt="provider-image" className="provider-image" />
+                                            <img src="/images/cardIcons/ourvalue_1.png" alt="provider-image" className="provider-image" />
                                         </div>
                                         <div className="provider-sub-content">
                                             <h1 className="provider-content-heading">Exceptional Service</h1>
@@ -116,7 +116,7 @@ const AboutUs = () => {
                                 <div className="provider-card">
                                     <div className="provider-content-container">
                                         <div className="provider-image-icon">
-                                            <img src="https://www.esteticanow.com/images/ourvalue_1.png" alt="provider-image" className="provider-image" />
+                                            <img src="/images/cardIcons/ourvalue_1.png" alt="provider-image" className="provider-image" />
                                         </div>
                                         <div className="provider-sub-content">
                                             <h1 className="provider-content-heading">Building Relationships</h1>
@@ -130,7 +130,7 @@ const AboutUs = () => {
                                 <div className="provider-card">
                                     <div className="provider-content-container">
                                         <div className="provider-image-icon">
-                                            <img src="https://www.esteticanow.com/images/ourvalue_2.png" alt="provider-image" className="provider-image" />
+                                            <img src="/images/cardIcons/ourvalue_2.png" alt="provider-image" className="provider-image" />
                                         </div>
                                         <div className="provider-sub-content">
                                             <h1 className="provider-content-heading">Commitment</h1>

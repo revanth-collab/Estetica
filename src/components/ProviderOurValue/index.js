@@ -13,7 +13,7 @@ const ProviderOurValue = () => (
                         <div className="provider-card">
                             <div className="provider-content-container">
                                 <div className="provider-image-icon">
-                                    <img src="https://www.esteticanow.com/images/ourvalue_1.png" alt="provider-image" className="provider-image" />
+                                    <img src="/images/cardIcons/ourvalue_1.png" alt="provider-image" className="provider-image" />
                                 </div>
                                 <div className="provider-sub-content">
                                     <h1 className="provider-content-heading">Engagement</h1>
@@ -26,7 +26,7 @@ const ProviderOurValue = () => (
                         <div className="provider-card">
                             <div className="provider-content-container">
                                 <div className="provider-image-icon">
-                                    <img src="https://www.esteticanow.com/images/ourvalue_2.png" alt="provider-image" className="provider-image" />
+                                    <img src="/images/cardIcons/ourvalue_2.png" alt="provider-image" className="provider-image" />
                                 </div>
                                 <div className="provider-sub-content">
                                     <h1 className="provider-content-heading">Support</h1>
@@ -39,7 +39,7 @@ const ProviderOurValue = () => (
                         <div className="provider-card">
                             <div className="provider-content-container">
                                 <div className="provider-image-icon">
-                                    <img src="https://www.esteticanow.com/images/ourvalue_3.png" alt="provider-image" className="provider-image" />
+                                    <img src="/images/cardIcons/ourvalue_3.png" alt="provider-image" className="provider-image" />
                                 </div>
                                 <div className="provider-sub-content">
                                     <h1 className="provider-content-heading">Growth</h1>
@@ -52,7 +52,7 @@ const ProviderOurValue = () => (
                         <div className="provider-card">
                             <div className="provider-content-container">
                                 <div className="provider-image-icon">
-                                    <img src="https://www.esteticanow.com/images/ourvalue_1.png" alt="provider-image" className="provider-image" />
+                                    <img src="/images/cardIcons/ourvalue_1.png" alt="provider-image" className="provider-image" />
                                 </div>
                                 <div className="provider-sub-content">
                                     <h1 className="provider-content-heading">Partnership</h1>

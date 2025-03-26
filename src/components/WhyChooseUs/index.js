@@ -105,7 +105,7 @@ const WhyChooseUs = () =>{
                 </ul>
             </div>
             <div className="why-choose-us-image-container">
-                <img src="https://www.esteticanow.com/images/est_new/new_y_choose.png" alt="Why choose us" />
+                <img src="/images/ProviderImages/home-page.png" alt="Why choose us" />
             </div>
         </div>
     )

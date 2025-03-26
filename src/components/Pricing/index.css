@@ -24,7 +24,7 @@
 }
 @media screen and (max-width:576px) {
     .pricing-rate-main-heading{
-        font-size: 27px;
+        font-size: 25px;
     }
     
 }
@@ -152,7 +152,7 @@
     border-radius: 15px;
     border: 1.5px solid transparent;
     width: 500px;
-    height: 200px;
+    height: 180px;
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(12px);
     transition: transform 0.5s ease, box-shadow 0.5s ease, background-color 0.4s ease, color 0.4s ease, border 0.4s ease;
@@ -218,9 +218,14 @@
 }
 
 .pricing-parallax-bg {
-    background: url("https://wallpaperaccess.com/full/438021.jpg") no-repeat center;
+    /* background: url("/images/miniques_lagoon.jpg") no-repeat center; */
+    /* background: radial-gradient(30%, #e6e1de, #dad4d2, #c9b7a7, #b7997d, #a68767);
+    background-blend-mode: overlay;
+    filter: contrast(105%) brightness(105%); */
+
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
     color: white;
+    padding-top:100px;
 }
