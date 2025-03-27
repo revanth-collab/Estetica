@@ -39,7 +39,7 @@ const HeroSection = () => {
             </div>
           </a>
 
-          <a href="https://play.google.com/store/apps/details?id=com.esteticaapp.user&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" className="hero-section-anchor-card-link">
+          <a href="https://apps.apple.com/in/app/estetica/id6739260215" target="_blank" rel="noopener noreferrer" className="hero-section-anchor-card-link">
             <div className="hero-app-card">
               <FaApple className="hero-app-icon" />
               <div className="hero-app-sub-card">

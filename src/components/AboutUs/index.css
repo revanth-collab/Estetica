@@ -172,6 +172,8 @@
   background: rgba(129, 91, 15, 0.8);
   padding: 5px 10px;
   border-radius: 20px;
+  width:100px;
+  text-align: center;
 }
 .user-side-to-heading {
   font-family: "Poppins",sans-serif;

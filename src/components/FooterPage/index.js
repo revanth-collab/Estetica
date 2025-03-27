@@ -1,6 +1,7 @@
 import "./index.css";
 import { FaInstagram, FaFacebookSquare, FaTwitter, FaTiktok, FaLinkedin } from "react-icons/fa";
 import { TbSquareRoundedLetterC } from "react-icons/tb";
+import {Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -11,7 +12,9 @@ const Footer = () => {
           <p className="footer-white-content">Who We Are</p>
           <p className="footer-white-content">What We Treat</p>
           <p className="footer-white-content">Services</p>
-          <p className="footer-white-content">Contact Us</p>
+          <Link to="/contact" className="footer-link">
+            <p className="footer-white-content">Contact Us</p>
+          </Link>
         </div>
         <div className="footer">
           <h1 className="gold-colored-content">Resources</h1>

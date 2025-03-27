@@ -42,12 +42,13 @@ const AboutUsScroll = () => {
     <div className="slider-container-ab about-scroll">
       <div className="image-track-ab" ref={imageTrackRef}>
         {[
-          "https://www.esteticanow.com/images/est/abt1.png",
-          "https://www.esteticanow.com/images/est/abt2.png",
-          "https://www.esteticanow.com/images/est/abt3.png",
-          "https://www.esteticanow.com/images/est/abt4.png",
-          "https://www.esteticanow.com/images/est/abt5.png",
-          "https://www.esteticanow.com/images/est/abt6.png",
+          "/images/AllImages/aboutScroll_1.avif",
+          "/images/AllImages/aboutScroll_2.jpg",
+          "/images/AllImages/aboutScroll_3.jpg",
+          "/images/AllImages/aboutScroll_4.avif",
+          "/images/AllImages/aboutScroll_5.jpg",
+          "/images/AllImages/aboutScroll_6.jpg",
+          "/images/AllImages/aboutScroll_7.jpg",
         ].map((src, index) => (
           <div className="image-ab-con">
             <img key={index} className="image-ab" src={src} alt={`Slider ${index + 1}`} />
@@ -56,12 +57,13 @@ const AboutUsScroll = () => {
         
         {/* Duplicate images to create an infinite effect */}
         {[
-          "https://www.esteticanow.com/images/est/abt1.png",
-          "https://www.esteticanow.com/images/est/abt2.png",
-          "https://www.esteticanow.com/images/est/abt3.png",
-          "https://www.esteticanow.com/images/est/abt4.png",
-          "https://www.esteticanow.com/images/est/abt5.png",
-          "https://www.esteticanow.com/images/est/abt6.png",
+          "/images/AllImages/aboutScroll_1.avif",
+          "/images/AllImages/aboutScroll_2.jpg",
+          "/images/AllImages/aboutScroll_3.jpg",
+          "/images/AllImages/aboutScroll_4.avif",
+          "/images/AllImages/aboutScroll_5.jpg",
+          "/images/AllImages/aboutScroll_6.jpg",
+          "/images/AllImages/aboutScroll_7.jpg",
         ].map((src, index) => (
           <div className="image-ab-con">
             <img key={`duplicate-${index}`} className="image-ab" src={src} alt={`Slider ${index + 1}`} />

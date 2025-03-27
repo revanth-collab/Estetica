@@ -135,12 +135,18 @@
 @media screen and (max-width:576px) {
     .premium-services-image-container {
         padding:45px;
+        margin-right: auto;
     }
     
 }
 .premium-services-image {
     height: 350px;
     width: 180px;
+}
+@media screen and (max-width:576px) {
+    .premium-services-image {
+        width: 100%;
+    }
 }
 .top-star {
     position: absolute;

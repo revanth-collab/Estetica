@@ -22,7 +22,7 @@ const OurApp = () => (
                     </div>
                 </a>
 
-                <a href="https://play.google.com/store/apps/details?id=com.esteticaapp.user&pcampaignid=web_share" target="_blank" rel="noopener noreferrer"  className="our-app-anchor">
+                <a href="https://apps.apple.com/in/app/estetica/id6739260215" target="_blank" rel="noopener noreferrer"  className="our-app-anchor">
                     <div className="app-store">
                         <FaApple className="our-app-icon"/>
                         <div className="app-store-sub-card">
