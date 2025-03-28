@@ -12,7 +12,9 @@ import PremiumServices from "../PremiumServices";
 import UserfriendlyInterface from "../UserfriendlyInterface";
 import Reviews from "../Reviews";
 import HeroSection from "../HeroSection";
+import Example from "../Example";
 import "./index.css";
+
 
 
 const LandingPage = () => (
@@ -23,7 +25,8 @@ const LandingPage = () => (
         <Rotate3D />
       </div> */}
       <div className="herosection-wrapper">
-        <HeroSection />
+        {/* <HeroSection /> */}
+        <Example />
       </div>
       <div className="our-team-wrapper">
         <OurTeam />

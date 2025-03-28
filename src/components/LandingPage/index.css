@@ -4,8 +4,7 @@
     width: 100%;
     min-height: 100vh;
     /* background-color: #ffebcd ; */
-    background-color: #f5deb3;
-
+    background-color: #F7E7E7;
     padding: 0;
 }
 .rotate3d-wrapper {
@@ -32,12 +31,11 @@
 
 .herosection-wrapper {
     position: relative;
-    top:60px;
-    padding:30px;
+    top:80px;
 }
 @media screen and (max-width:576px) {
     .herosection-wrapper {
-        top:30px;
+        top:50px;
     }
 }
 .our-team-wrapper {

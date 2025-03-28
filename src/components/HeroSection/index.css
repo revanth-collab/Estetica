@@ -3,6 +3,7 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap:20px;
     padding: 20px 70px 20px 50px;
     min-height: 100vh;
     /* background: linear-gradient(135deg, #f4f4f4, #e0e0e0); */
