@@ -165,6 +165,26 @@
 @media screen and (max-width: 576px) {
     .navbar-custom {
         padding: 10px 15px !important;
-        height: 0px;
+        min-height: 60px
     }
 }
+
+.custom-offcanvas.offcanvas {
+    width: 75% !important;
+    background-color: #111 !important; /* dark background */
+    color: white;
+  }
+  
+  .custom-offcanvas .offcanvas-header .btn-close {
+    filter: invert(1); /* make the close button white */
+  }
+  
+  .custom-offcanvas .nav-link {
+    color: white !important;
+    font-size: 18px;
+  }
+  
+  .custom-offcanvas .nav-link:hover {
+    color: #ccc !important;
+  }
+  

@@ -4,12 +4,12 @@ import { Navbar, Container, Nav, Offcanvas } from "react-bootstrap";
 import "./index.css";
 
 const NavBar = () => {
-  const [navbarColor, setNavbarColor] = useState("transparent");
+  const [navbarColor, setNavbarColor] = useState("#F7E7E7");
   const [showOffcanvas, setShowOffcanvas] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setNavbarColor(window.scrollY > 50 ? "#fff" : "transparent");
+      setNavbarColor(window.scrollY > 50 ? "#fff" : "#F7E7E7");
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -36,7 +36,7 @@ const NavBar = () => {
             />
 
             {/* Offcanvas menu for small screens only */}
-            <Navbar.Offcanvas
+            {/* <Navbar.Offcanvas
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
             placement="end"
@@ -45,7 +45,7 @@ const NavBar = () => {
             className="d-md-none"
             >
             <Offcanvas.Header closeButton>
-                <Offcanvas.Title id="offcanvasNavbarLabel">Menu</Offcanvas.Title>
+                <Offcanvas.Title id="offcanvasNavbarLabel" style={{color: "#9A5E26",}}>EsteticaNow</Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
                 <Nav className="ms-auto flex-grow-1 pe-3">
@@ -56,7 +56,70 @@ const NavBar = () => {
                 <Nav.Link as={Link} to="/contact" onClick={() => setShowOffcanvas(false)}>Contact</Nav.Link>
                 </Nav>
             </Offcanvas.Body>
+            </Navbar.Offcanvas> */}
+
+            <Navbar.Offcanvas
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel"
+                placement="end"
+                show={showOffcanvas}
+                onHide={() => setShowOffcanvas(false)}
+                className="d-md-none custom-offcanvas"
+                >
+                <Offcanvas.Header closeButton closeVariant="white">
+                    <Offcanvas.Title
+                    id="offcanvasNavbarLabel"
+                    style={{ color: "#9A5E26",fontWeight:"bold",}}
+                    >
+                    EsteticaNow
+                    </Offcanvas.Title>
+                </Offcanvas.Header>
+                <Offcanvas.Body>
+                    <Nav className="ms-auto flex-grow-1 pe-3">
+                    <Nav.Link
+                        as={Link}
+                        to="/"
+                        onClick={() => setShowOffcanvas(false)}
+                        className="text-white"
+                    >
+                        Home
+                    </Nav.Link>
+                    <Nav.Link
+                        as={Link}
+                        to="/about-us"
+                        onClick={() => setShowOffcanvas(false)}
+                        className="text-white"
+                    >
+                        About Us
+                    </Nav.Link>
+                    <Nav.Link
+                        as={Link}
+                        to="/pricing"
+                        onClick={() => setShowOffcanvas(false)}
+                        className="text-white"
+                    >
+                        Pricing
+                    </Nav.Link>
+                    <Nav.Link
+                        as={Link}
+                        to="/reviews"
+                        onClick={() => setShowOffcanvas(false)}
+                        className="text-white"
+                    >
+                        Reviews
+                    </Nav.Link>
+                    <Nav.Link
+                        as={Link}
+                        to="/contact"
+                        onClick={() => setShowOffcanvas(false)}
+                        className="text-white"
+                    >
+                        Contact
+                    </Nav.Link>
+                    </Nav>
+                </Offcanvas.Body>
             </Navbar.Offcanvas>
+
 
             {/* Collapse menu for medium and larger screens */}
             <Navbar.Collapse className="justify-content-end d-none d-md-flex">
