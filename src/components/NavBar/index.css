@@ -1,27 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Kode+Mono:wght@400..700&family=Manrope:wght@200..800&family=Monsieur+La+Doulaise&family=Montez&display=swap');
 
-.navbar {
+/* .navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 20px 50px;
+    padding: 20px 40px;
     background-color: transparent;
     position: fixed;
     height: 80px;
     z-index: 12;
     transition: background-color 0.3s ease-in-out;
-    /* animation: navbarColor 1s linear;
-    animation-timeline: scroll(); */
-}
+} */
 
-@media screen and (max-width:576px) {
+/* @media screen and (max-width:576px) {
     .navbar {
         padding: 10px 15px;
         height: 50px;
     }
-}
+} */
 
 @keyframes navbarColor {
     to {
@@ -36,14 +34,13 @@
     height: 100%;
     margin-right: 10px;
 }
+
 .navbar-logo {
-    width:250px;
-    margin-bottom: 3px;
+    width: 250px;
 }
-@media screen and (max-width:576px) {
+@media screen and (max-width: 576px) {
     .navbar-logo {
         width: 150px;
-        margin-top: 5px;
     }
 }
 .nav-links {
@@ -56,19 +53,19 @@
     list-style: none;
     width: 80px;
 }
+
+
 .anchor {
-    text-decoration: none;
-    color: black;
+    color: black !important;
     font-size: 15px;
-    /* font-family: "Grechen Fuemen", serif; */
-    font-family: "Poppins",sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: "Poppins", sans-serif;
 }
+
 .anchor:hover {
     font-size: 17px;
     transform: translateY(-3px);
 }
+
 .laptop-links {
     display: none;
 }
@@ -131,16 +128,43 @@
     cursor: pointer;
 }
 
-.openbtn {
+/* .openbtn {
     font-size: 20px;
     cursor: pointer;
     background-color: transparent;
     color: #523907ce;
     padding: 10px 15px;
     border: none;
+} */
+
+.openbtn {
+    border: none;
+    background-color: transparent;
+    color: #523907ce;
 }
 
 .openbtn:hover {
     background-color: #523907ce;
     color: #fff;
+}
+
+
+.navbar-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 40px !important;
+    background-color: transparent;
+    position: fixed;
+    height: 80px;
+    z-index: 12;
+    transition: background-color 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 576px) {
+    .navbar-custom {
+        padding: 10px 15px !important;
+        height: 0px;
+    }
 }

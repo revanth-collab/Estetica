@@ -1,86 +1,78 @@
 import React, { useState, useEffect } from "react";
-import {Link}  from "react-router-dom"
+import { Link } from "react-router-dom";
+import { Navbar, Container, Nav, Offcanvas } from "react-bootstrap";
 import "./index.css";
 
 const NavBar = () => {
-    const [navbarColor, setNavbarColor] = useState("transparent");
-    const [sidePanelOpen, setSidePanelOpen] = useState(false);
+  const [navbarColor, setNavbarColor] = useState("transparent");
+  const [showOffcanvas, setShowOffcanvas] = useState(false);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 50) {
-                // setNavbarColor("rgb(67, 65, 65)"); 
-                setNavbarColor("#fff")
-                // setNavbarColor("#ffebcd")
-            } else {
-                setNavbarColor("transparent");
-            }
-        };
+  useEffect(() => {
+    const handleScroll = () => {
+      setNavbarColor(window.scrollY > 50 ? "#fff" : "transparent");
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
-        // const openNav=()=> {
-        //     document.getElementById("mySidepanel").style.width = "250px";
-        // }
+  return (
+    <>
+      <Navbar
+        expand="md"
+        fixed="top"
+        style={{ backgroundColor: navbarColor, transition: "0.3s"}}
+        className="navbar-custom"
+        >
+        <Container fluid>
+            <Navbar.Brand as={Link} to="/">
+            <img src="/images/est_logo25.png" alt="Logo" className="navbar-logo" />
+            </Navbar.Brand>
 
-        // const closeNav =()=> {
-        //     document.getElementById("mySidepanel").style.width = "0";
-        //   }
+            {/* Toggler visible only on small devices */}
+            <Navbar.Toggle
+            aria-controls="offcanvasNavbar"
+            onClick={() => setShowOffcanvas(true)}
+            className="d-md-none openbtn"
+            />
 
-        window.addEventListener("scroll", handleScroll);
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
+            {/* Offcanvas menu for small screens only */}
+            <Navbar.Offcanvas
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+            placement="end"
+            show={showOffcanvas}
+            onHide={() => setShowOffcanvas(false)}
+            className="d-md-none"
+            >
+            <Offcanvas.Header closeButton>
+                <Offcanvas.Title id="offcanvasNavbarLabel">Menu</Offcanvas.Title>
+            </Offcanvas.Header>
+            <Offcanvas.Body>
+                <Nav className="ms-auto flex-grow-1 pe-3">
+                <Nav.Link as={Link} to="/" onClick={() => setShowOffcanvas(false)}>Home</Nav.Link>
+                <Nav.Link as={Link} to="/about-us" onClick={() => setShowOffcanvas(false)}>About Us</Nav.Link>
+                <Nav.Link as={Link} to="/pricing" onClick={() => setShowOffcanvas(false)}>Pricing</Nav.Link>
+                <Nav.Link as={Link} to="/reviews" onClick={() => setShowOffcanvas(false)}>Reviews</Nav.Link>
+                <Nav.Link as={Link} to="/contact" onClick={() => setShowOffcanvas(false)}>Contact</Nav.Link>
+                </Nav>
+            </Offcanvas.Body>
+            </Navbar.Offcanvas>
 
-    return (
-        <div className="navbar" style={{ backgroundColor: navbarColor }}>
-            <div className="logo">
-                <a href="#home">
-                    <img src="images/est_logo25.png" alt="Website Logo" className="navbar-logo"/>
-                </a>
-            </div>
-            <div className="laptop-links">
-                <ul className="nav-links">
-                    <Link to="/" className="navbar-link">
-                        <li className="list">
-                            <p className="anchor">Home</p>
-                        </li>
-                    </Link>
-                    <Link to="/about-us" className="navbar-link">
-                        <li className="list">
-                            <p className="anchor">About us</p>
-                        </li>
-                    </Link>
-                    <Link to="/pricing" className="navbar-link">
-                        <li className="list">
-                            <p className="anchor">Pricing</p>
-                        </li>
-                    </Link>
-                    <Link to="/reviews" className="navbar-link">
-                        <li className="list">
-                            <p className="anchor">Reviews</p>
-                        </li>
-                    </Link>
-                    <Link to="/contact" className="navbar-link">
-                        <li className="list">
-                            <p className="anchor">Contact</p>
-                        </li>
-                    </Link>
-                </ul>
-            </div>
-            <div className="mobile-links">
-                <div className={`sidepanel ${sidePanelOpen ? "open" : ""}`}>
-                    <button className="closebtn" onClick={() => setSidePanelOpen(false)}>&times;</button>
-                    <Link to="/" onClick={() => setSidePanelOpen(false)}>Home</Link>
-                    <Link to="/about-us" onClick={() => setSidePanelOpen(false)}>About us</Link>
-                    <Link to="/pricing" onClick={() => setSidePanelOpen(false)}>Pricing</Link>
-                    <Link to="/reviews" onClick={() => setSidePanelOpen(false)}>Reviews</Link>
-                    <Link to="/contact" onClick={() => setSidePanelOpen(false)}>Contact</Link>
-                </div>
+            {/* Collapse menu for medium and larger screens */}
+            <Navbar.Collapse className="justify-content-end d-none d-md-flex">
+            <Nav>
+                <Nav.Link as={Link} to="/" className="anchor">Home</Nav.Link>
+                <Nav.Link as={Link} to="/about-us" className="anchor">About Us</Nav.Link>
+                <Nav.Link as={Link} to="/pricing" className="anchor">Pricing</Nav.Link>
+                <Nav.Link as={Link} to="/reviews" className="anchor">Reviews</Nav.Link>
+                <Nav.Link as={Link} to="/contact" className="anchor">Contact</Nav.Link>
+            </Nav>
+            </Navbar.Collapse>
+        </Container>
+        </Navbar>
 
-                <button className="openbtn" onClick={() => setSidePanelOpen(true)}>&#9776;</button>
-            </div>
-        </div>
-    );
+    </>
+  );
 };
 
 export default NavBar;

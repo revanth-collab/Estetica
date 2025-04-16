@@ -10,6 +10,10 @@ import ReviewsComponent from "./components/ReviewsComponent";
 import Pricing from "./components/Pricing";
 import AboutUs from "./components/AboutUs";
 import Example from "./components/Example";
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 import "./App.css";
 
 export default function App() {
