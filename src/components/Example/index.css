@@ -331,8 +331,8 @@
     align-items: center;
     gap: 15px;
     background: #F7E7E7;
-    padding: 15px 30px;
-    border-radius: 12px;
+    padding: 11px 15px;
+    border-radius: 11px;
     transition: transform 0.3s, box-shadow 0.3s;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
 }
@@ -352,7 +352,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap:0px;
+    gap:0;
 }
 
 
@@ -369,6 +369,7 @@
     font-size: 14px;
     font-family: "Roboto", sans-serif;
     color: #9A5E26;
+    margin-bottom:0 ;
 }
   
 .example-app-content {
@@ -376,6 +377,7 @@
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     color: #9A5E26;
+    margin-bottom: 0;
 }
 
 @media screen and (max-width:576px) {

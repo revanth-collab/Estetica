@@ -34,11 +34,11 @@ const OurTeam = () => {
                 {cards.map((card) => (
                     <div
                         key={card.id}
-                        className={`card ${selectedCard === card.id ? "active" : ""}`}
+                        className={`card-image ${selectedCard === card.id ? "active" : ""}`}
                         onClick={() => handleSelection(card.id)}
                         style={{ backgroundImage: `url(${card.image})` }}
                     >
-                        <div className="row">
+                        <div className="row_content">
                             <div className="icon">{card.id}</div>
                             <div className="description">
                                 <h4>{card.title}</h4>

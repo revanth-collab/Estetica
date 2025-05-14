@@ -20,6 +20,7 @@
     font-style: normal;
     padding:20px;
     text-align: center;
+    color: #000000;
 }
 @media screen and (max-width:768px) {
     .our-team-heading {
@@ -52,7 +53,7 @@
     }
 }
 
-/* .card {
+/* .card-image {
     width: 70px;
     border-radius: 2rem;
     background-size: cover;
@@ -66,7 +67,7 @@
 } */
 
 /* @media screen and (max-width:576px) {
-    .card {
+    .card-image {
         width: 60px;
         border-radius: 10px;
         border: 1px solid black;
@@ -76,19 +77,19 @@
 } */
 
 
-.card > .row {
+.card-image > .row_content {
     color: white;
     display: flex;
     flex-wrap: nowrap;
 }
 /* @media screen and (max-width:576px) {
-    .card > .row {
+    .card-image > .row_content {
         margin-left: 5;
     }
     
 } */
 
-.card > .row > .icon {
+.card-image > .row_content > .icon {
     background: #000000;
     color: white;
     border-radius: 50%;
@@ -100,14 +101,14 @@
     margin: 10px;
 }
 @media screen and (max-width:576px) {
-    .card > .row > .icon {
+    .card-image > .row_content > .icon {
         margin: 10px 1.5px 0px 1.5px;
         height: 28px;
         width: 28px;
     }
 }
 
-.card > .row > .description {
+.card-image > .row_content > .description {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -120,7 +121,7 @@
     transition: all .3s ease;
 }
 @media screen and (max-width:576px) {
-    .card > .row > .description {
+    .card-image > .row_content > .description {
         width: 300px;
         height: 50px;
         margin-left: 10px;
@@ -168,30 +169,31 @@ input:checked + label .description {
     transform: translateY(0);
 } */
 
-/* .card:nth-of-type(1){
+/* .card-image:nth-of-type(1){
     background-image: url('https://cdn.pixabay.com/photo/2020/05/14/12/37/barber-5194406_1280.jpg');
 } */
 /* @media screen and (max-width:576px) {
-    .card[for="c1"] {
+    .card-image[for="c1"] {
         background-repeat: no-repeat;
         height: 100%;
         background-size: 100% 100%;
     }
 } */
-/* .card:nth-of-type(2){
+/* .card-image:nth-of-type(2){
     background-image: url('https://img.freepik.com/free-photo/woman-getting-treatment-hairdresser-shop_23-2149230917.jpg?t=st=1739961334~exp=1739964934~hmac=7d3e09ae5a4ca8a390d0bcda8ce4c3692bcb0188277eef7ddaa910a60d92af3e&w=996');
 }
-.card:nth-of-type(3){
+.card-image:nth-of-type(3){
     background-image: url('https://img.freepik.com/free-photo/portrait-smiling-owner-hairdresser-salon_329181-1953.jpg?ga=GA1.1.297041213.1730542032&semt=ais_hybrid');
 }
-.card[for="c4"] {
+.card-image[for="c4"] {
     background-image: url('https://img.freepik.com/free-photo/woman-relaxing-spa_329181-13152.jpg?t=st=1739952856~exp=1739956456~hmac=64ddc7a0596ed57496b61765771972abfacd9f45ba12cbf8ba492034fb035777&w=996');
 } */
 
 
-.card {
+.card-image {
     width: 70px;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
+    /* border:1px solid #000; */
     background-size: cover;
     cursor: pointer;
     overflow: hidden;
@@ -203,7 +205,7 @@ input:checked + label .description {
 }
 
 @media screen and (max-width:576px) {
-    .card {
+    .card-image {
         /* width: 40px; */
         width: 50px;
         border-radius: 10px;
@@ -213,32 +215,32 @@ input:checked + label .description {
     }
 }
 
-/* Expanded card when selected */
-.card.active {
+/* Expanded card-image when selected */
+.card-image.active {
     width: 800px;
 }
 
 @media screen and (min-width:577px) and (max-width:768px) {
-    .card.active {
+    .card-image.active {
         width: 400px;
     }
 }
 
 /* Description visibility when selected */
-.card .description {
+.card-image .description {
     opacity: 0;
     transform: translateY(30px);
     transition: all 0.3s ease;
 }
 
-.card.active .description {
+.card-image.active .description {
     opacity: 1;
     transform: translateY(0);
 }
 
 
 @media screen and (max-width:767px) {
-    .card.active{
+    .card-image.active{
         width: 400px;
     }
 }

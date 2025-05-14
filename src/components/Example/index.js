@@ -74,6 +74,7 @@
 // export default Example; 
 
 import { FaGooglePlay, FaApple } from "react-icons/fa";
+// import {Container, Row, Col} from "react-bootstrap"
 import "./index.css"
 
 const Example = () => (
@@ -84,6 +85,21 @@ const Example = () => (
                 {/* <div className="example-image-container">
                     <img src="/images/AllImages/example-image.jpg" alt="Example-Image" className="example-main-image"/>
                 </div> */}
+                {/* <Container>
+                  <Row>
+                  <Col md={6} xs={12} className="relative-column">
+                    <div className="absolute-box box1">Box 1</div>
+                    <div className="absolute-box box2">Box 2</div>
+                    <div className="absolute-box box3">Box 3</div>
+                  </Col>
+                  <Col md={6} xs={12}>
+                    <div className="content-box">
+                      <h2>Hello World</h2>
+                      <p>This is a text column beside the image layout.</p>
+                    </div>
+                  </Col>
+                  </Row>
+                </Container> */}
                 <div className="example-added-section-image-container">
                   <div className="example-added-section-side-image example-added-side-image1">
                     <img src="/images/HeroImages/hero-main-11.jpg" alt="hero-side-image" />
